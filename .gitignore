@@ -1,0 +1,5 @@
+# Ignorar documentação operacional local com caminhos/IPs privados ao subir para o GitHub
+README_LOCAL.md
+__pycache__/
+*.pyc
+.DS_Store
