@@ -82,7 +82,7 @@ python3 ./scripts/benchmark_routers.py
 
 ### Passo 1 — Clonar o Repositório no seu Diretório de Skills
 ```bash
-git clone https://github.com/QuasarJ03131806/kaminho.git
+git clone https://github.com/mizaelsouto/kaminho.git
 cd kaminho
 ```
 
