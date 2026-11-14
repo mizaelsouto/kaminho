@@ -3,7 +3,7 @@ name: kaminho-index
 author: Mizael Souto
 version: 1.1.0
 total_agents: 41
-total_skills: 1282
+total_skills: 1296
 total_html_templates: 2519
 formats: [md, html, json]
 ---
@@ -11,7 +11,7 @@ formats: [md, html, json]
 # 🧭 Kaminho (`@kaminho`) — Índice Nativo Markdown (`.md`)
 
 > **Desenvolvido por:** **Mizael Souto**  
-> **Capacidade:** **41 Agentes** | **1282 Skills (`.md`)** | **2519 Templates/Componentes (`.html`)**
+> **Capacidade:** **41 Agentes** | **1296 Skills (`.md`)** | **2519 Templates/Componentes (`.html`)**
 
 ---
 
@@ -60,7 +60,7 @@ formats: [md, html, json]
 | **`@getdesign`** | `./kit_upper/.agent/agents/getdesign.md` | Extrai paletas, tipografia, tokens e regras de layout de sites reais e repositórios diretamente para um arquivo DESIGN.md de alta fidelidade. |
 | **`@hermes-agent`** | `./kit_upper/.agent/agents/hermes-agent.md` | Framework de agente autônomo, persistente e auto-aperfeiçoável da Nous Research, com loops de aprendizado contínuo e memória episódica. |
 | **`@humanizer`** | `./kit_upper/.agent/agents/humanizer.md` | Remove clichês de IA, frases engessadas, vícios sintéticos e reescreve textos com cadência natural, estilo humano e clareza. |
-| **`@kaminho`** | `./kit_upper/.agent/agents/kaminho.md` | Kaminho — O roteador e indexador inteligente de agentes e skills de IA. Analisa automaticamente o contexto digitado pelo usuário e traça o caminho exato até o agente e as skills especialistas em < 7ms com 97% de economia de tokens. Desenvolvido por Mizael Sout |
+| **`@kaminho`** | `./kit_upper/.agent/agents/kaminho.md` | Kaminho v2.0 — O roteador semântico, decompositor de intenções multi-agente e indexador inteligente Tri-Modal (.md, .html, .json) de agentes, skills e templates HTML. Reconhece por semântica o que está sendo digitado, decompõe pedidos complexos em pipelines mu |
 | **`@mobile-developer`** | `./AgentKit_2/.agent/agents/mobile-developer.md` | Expert in React Native and Flutter mobile development. Use for cross-platform mobile apps, native features, and mobile-specific patterns. Triggers on mobile, react native, flutter, ios, android, app store, expo. |
 | **`@open-design`** | `./kit_upper/.agent/agents/open-design.md` | Workspace de design e prototipagem colaborativa orientada por IA, gerando interfaces web, mobile e dashboards sem dependência de Figma. |
 | **`@orchestrator`** | `./AgentKit_2/.agent/agents/orchestrator.md` | Multi-agent coordination and task orchestration. Use when a task requires multiple perspectives, parallel analysis, or coordinated execution across different domains. Invoke this agent for complex tasks that benefit from security, backend, frontend, testing, a |
@@ -168,7 +168,7 @@ formats: [md, html, json]
 
 ---
 
-## 🧩 4. Catálogo Completo das 1282 Skills (`.md`)
+## 🧩 4. Catálogo Completo das 1296 Skills (`.md`)
 
 | Skill | Caminho Relativo | Descrição |
 | :--- | :--- | :--- |
@@ -341,6 +341,8 @@ formats: [md, html, json]
 | `brand-guidelines` | `./anthropics-document-skills/.agent/skills/anthropics-document-skills/skills/brand-guidelines/SKILL.md` | Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply. |
 | `brand-guidelines` | `./brand-guidelines/.agent/skills/brand-guidelines/SKILL.md` | Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply. |
 | `brandkit` | `./open-design/.agent/skills/open-design/skills/brandkit/SKILL.md` | You are an elite brand identity art director, logo designer, visual-system strategist, and presentation designer. |
+| `build-models` | `./replicate/.agent/skills/build-models/SKILL.md` | - Cog reference (single file): <https://cog.run/llms.txt> |
+| `build-models` | `./replicate/skills/build-models/SKILL.md` | - Cog reference (single file): <https://cog.run/llms.txt> |
 | `build-test` | `./open-design/.agent/skills/open-design/plugins/_official/atoms/build-test/SKILL.md` | Run the project's build / typecheck / lint / test commands and emit the build.passing + tests.passing signals devloop convergence reads. |
 | `burpsuite-project-parser` | `./trailofbits-security/.agent/skills/trailofbits-security/plugins/burpsuite-project-parser/skills/burpsuite-project-parser/SKILL.md` | Searches and explores Burp Suite project files (.burp) from the command line. Use when searching response headers or bodies with regex patterns, extracting security audit findings, dumping proxy history or site map data, or analyzing HTTP traffic captured in a |
 | `c-review` | `./trailofbits-security/.agent/skills/trailofbits-security/plugins/c-review/skills/c-review/SKILL.md` | Performs comprehensive C/C++ security review for memory corruption, integer overflows, race conditions, and platform-specific vulnerabilities. Use when auditing native C/C++ applications, reviewing daemons or services for memory safety, or hunting integer over |
@@ -397,6 +399,8 @@ formats: [md, html, json]
 | `community-import-smoke-test` | `./open-design/.agent/skills/open-design/plugins/community/import-smoke-test/SKILL.md` | A portable community plugin for validating OpenDesign plugin import flows. |
 | `community-marketing` | `./marketingskills/.agent/skills/marketingskills/skills/community-marketing/SKILL.md` | Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord or Slack community, manage a forum or subreddit, build brand advocates, increase word-of-mouth, drive commun |
 | `community-registry-starter` | `./open-design/.agent/skills/open-design/plugins/community/registry-starter/SKILL.md` | A small community registry starter plugin used to verify OpenDesign marketplace install flows. |
+| `compare-models` | `./replicate/.agent/skills/compare-models/SKILL.md` | Compare Replicate models by cost, speed, quality, and capabilities. |
+| `compare-models` | `./replicate/skills/compare-models/SKILL.md` | Compare Replicate models by cost, speed, quality, and capabilities. |
 | `competitive-ads-extractor` | `./open-design/.agent/skills/open-design/skills/competitive-ads-extractor/SKILL.md` | Extract and analyze competitors' ads from ad libraries to understand messaging and creative approaches that resonate. |
 | `competitor-news-monitor` | `./hermes-agent/.agent/skills/hermes-agent/skills/research/competitor-news-monitor/SKILL.md` | Watch named companies for material news; cited digests. |
 | `competitor-profiling` | `./marketingskills/.agent/skills/marketingskills/skills/competitor-profiling/SKILL.md` | When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor research,' 'competitor analysis,' 'profile this competitor,' 'analyze competitor,' 'competitive intelligence,' ' |
@@ -563,6 +567,8 @@ formats: [md, html, json]
 | `figma-use` | `./open-design/.agent/skills/open-design/skills/figma-use/SKILL.md` | Run Figma Plugin API scripts for canvas writes, inspections, variables, and design-system work. Prerequisite for every other Figma skill in this catalogue. |
 | `finance-report` | `./open-design/.agent/skills/open-design/plugins/_official/examples/finance-report/SKILL.md` | Produce a single-screen financial report in one self-contained HTML file. |
 | `finance-report` | `./open-design/.agent/skills/open-design/design-templates/finance-report/SKILL.md` | Produce a single-screen financial report in one self-contained HTML file. |
+| `find-models` | `./replicate/.agent/skills/find-models/SKILL.md` | Find AI models on Replicate using search and curated collections. |
+| `find-models` | `./replicate/skills/find-models/SKILL.md` | Find AI models on Replicate using search and curated collections. |
 | `find-security-vulnerabilities-in-code` | `./strix/.agent/skills/strix/skills/find-security-vulnerabilities-in-code/SKILL.md` | Find security vulnerabilities in a codebase or repository with Strix — a white-box AI security review that reads your source, reasons about the actual data flow and authorization model, then exploits what it finds in a live sandbox so every reported issue has |
 | `find-skills` | `./agent-skills/.agent/skills/agent-skills/skills/find-skills/SKILL.md` | Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionalit |
 | `find-skills` | `./find-skills/.agent/skills/find-skills/SKILL.md` | Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionalit |
@@ -847,8 +853,7 @@ formats: [md, html, json]
 | `kami-deck` | `./open-design/.agent/skills/open-design/design-templates/kami-deck/SKILL.md` | Sister skill to [`kami-landing`](../kami-landing/). Produces a single |
 | `kami-landing` | `./open-design/.agent/skills/open-design/plugins/_official/examples/kami-landing/SKILL.md` | Produce a single-page document in the **kami (紙 / 纸)** design system. |
 | `kami-landing` | `./open-design/.agent/skills/open-design/design-templates/kami-landing/SKILL.md` | Produce a single-page document in the **kami (紙 / 纸)** design system. |
-| `kaminho` | `./kaminho/.agent/skills/kaminho/SKILL.md` | Kaminho — O roteador e indexador inteligente de agentes e skills de IA. Analisa automaticamente o contexto digitado pelo usuário e traça o caminho exato até o agente e as skills especialistas em < 7ms com 97% de economia de tokens. Desenvolvido por Mizael Sout |
-| `kaminho` | `./agent-indexer-router/.agent/skills/agent-indexer-router/SKILL.md` | Kaminho — O roteador e indexador inteligente de agentes e skills de IA. Analisa automaticamente o contexto digitado pelo usuário e traça o caminho exato até o agente e as skills especialistas em < 7ms com 97% de economia de tokens. Desenvolvido por Mizael Sout |
+| `kaminho` | `./kaminho/.agent/skills/kaminho/SKILL.md` | Kaminho v2.0 — O roteador semântico, decompositor de intenções multi-agente e indexador inteligente Tri-Modal (.md, .html, .json) de agentes, skills e templates HTML. Reconhece por semântica o que está sendo digitado, decompõe pedidos complexos em pipelines mu |
 | `kanban-board` | `./open-design/.agent/skills/open-design/plugins/_official/examples/kanban-board/SKILL.md` | Produce a single-screen kanban board. |
 | `kanban-board` | `./open-design/.agent/skills/open-design/design-templates/kanban-board/SKILL.md` | Produce a single-screen kanban board. |
 | `kanban-video-orchestrator` | `./hermes-agent/.agent/skills/hermes-agent/optional-skills/creative/kanban-video-orchestrator/SKILL.md` | Plan and run multi-agent video production pipelines. |
@@ -1082,12 +1087,18 @@ formats: [md, html, json]
 | `promo-writer` | `./claude-ai-music-skills/.agent/skills/claude-ai-music-skills/skills/promo-writer/SKILL.md` | Generates platform-specific social media copy from album themes, track concepts, and lyrics. Use when promo/ templates need to be populated before release. |
 | `promote-idea` | `./claude-ai-music-skills/.agent/skills/claude-ai-music-skills/skills/promote-idea/SKILL.md` | Converts an album idea from IDEAS.md into an actual album project in one step. Use when the user says "promote [idea title]", "turn idea into album", or "start working on [idea]". |
 | `prompt-engineer` | `./jeffallan-claude-skills/.agent/skills/jeffallan-claude-skills/skills/prompt-engineer/SKILL.md` | Writes, refactors, and evaluates prompts for LLMs — generating optimized prompt templates, structured output schemas, evaluation rubrics, and test suites. Use when designing prompts for new LLM applications, refactoring existing prompts for better accuracy or |
+| `prompt-images` | `./replicate/.agent/skills/prompt-images/SKILL.md` | Distilled from Replicate's blog posts on prompting image models (2024-2026). Techniques are model-agnostic and focus on transferable principles. |
+| `prompt-images` | `./replicate/skills/prompt-images/SKILL.md` | Distilled from Replicate's blog posts on prompting image models (2024-2026). Techniques are model-agnostic and focus on transferable principles. |
+| `prompt-videos` | `./replicate/.agent/skills/prompt-videos/SKILL.md` | Distilled from Replicate's blog posts on prompting video models (2025-2026). Techniques are model-agnostic and focus on transferable principles. |
+| `prompt-videos` | `./replicate/skills/prompt-videos/SKILL.md` | Distilled from Replicate's blog posts on prompting video models (2025-2026). Techniques are model-agnostic and focus on transferable principles. |
 | `pronunciation-specialist` | `./claude-ai-music-skills/.agent/skills/claude-ai-music-skills/skills/pronunciation-specialist/SKILL.md` | Scans lyrics for pronunciation risks and prevents Suno mispronunciations. Use when writing lyrics with proper nouns, technical terms, homographs, or non-English words. |
 | `property-based-testing` | `./trailofbits-security/.agent/skills/trailofbits-security/plugins/property-based-testing/skills/property-based-testing/SKILL.md` | Writes, reviews, and debugs property-based tests — Hypothesis, fast-check, proptest, jqwik, rapid, and Echidna or Medusa for Solidity invariants. Use whenever tests should cover a whole input domain instead of a hand-picked list of examples: encode/decode and |
 | `property-listings` | `./hermes-agent/.agent/skills/hermes-agent/optional-skills/productivity/property-listings/SKILL.md` | Present property and rental listings as desktop cards. |
 | `prospecting` | `./marketingskills/.agent/skills/marketingskills/skills/prospecting/SKILL.md` | When the user wants to find, qualify, and build a list of prospects to reach out to, across B2B SaaS, general B2B, or local small businesses. Also use when the user mentions "prospecting," "build a prospect list," "find leads," "lead list," "outbound list," "t |
 | `prove-patch` | `./trailofbits-security/.agent/skills/trailofbits-security/plugins/patching-bugs/skills/prove-patch/SKILL.md` | Use when a local security patch commit needs independent scoped and three-arm proof. |
 | `public-relations` | `./marketingskills/.agent/skills/marketingskills/skills/public-relations/SKILL.md` | When the user wants help with public relations, earned media, press coverage, journalist outreach, or media strategy (not pull requests). Also use when the user mentions 'PR,' 'press,' 'press release,' 'media outreach,' 'pitch a journalist,' 'get featured,' 'm |
+| `publish-models` | `./replicate/.agent/skills/publish-models/SKILL.md` | - Cog reference: <https://cog.run/llms.txt> |
+| `publish-models` | `./replicate/skills/publish-models/SKILL.md` | - Cog reference: <https://cog.run/llms.txt> |
 | `publish-site` | `./hermes-agent/.agent/skills/hermes-agent/optional-skills/web-development/publish-site/SKILL.md` | Versioned site deploys to GitHub/Cloudflare/Netlify Pages. |
 | `python-debugpy` | `./hermes-agent/.agent/skills/hermes-agent/skills/software-development/python-debugpy/SKILL.md` | Debug Python: pdb REPL + debugpy remote (DAP). |
 | `python-patterns` | `./AgentKit_2/.agent/skills/python-patterns/SKILL.md` | Python development principles and decision-making. Framework selection, async patterns, type hints, project structure. Teaches thinking, not copying. |
@@ -1120,6 +1131,7 @@ formats: [md, html, json]
 | `rendercv` | `./rendercv/.agent/skills/rendercv/skills/rendercv/SKILL.md` | >- |
 | `replay-regression` | `./trailofbits-security/.agent/skills/trailofbits-security/plugins/regression-hunt/skills/replay-regression/SKILL.md` | Use when independently verifying a supplied PoC against fresh live before/after deployments. |
 | `replicate` | `./open-design/.agent/skills/open-design/skills/replicate/SKILL.md` | Discover, compare, and run AI models using Replicate's API. Strong fit for image, audio, and video generation pipelines that swap models frequently. |
+| `replicate` | `./replicate/.agent/skills/replicate/SKILL.md` | Official suite of Agent Skills for building AI-powered applications with [Replicate](https://replicate.com). |
 | `replit-deck` | `./open-design/.agent/skills/open-design/plugins/_official/examples/replit-deck/SKILL.md` | Produce a single-file horizontal-swipe HTML deck in one of eight Replit-Slides themes. Every theme is a complete visual system — do not mix tokens across themes. |
 | `replit-deck` | `./open-design/.agent/skills/open-design/design-templates/replit-deck/SKILL.md` | Produce a single-file horizontal-swipe HTML deck in one of eight Replit-Slides themes. Every theme is a complete visual system — do not mix tokens across themes. |
 | `report-regressions` | `./trailofbits-security/.agent/skills/trailofbits-security/plugins/regression-hunt/skills/report-regressions/SKILL.md` | Use when assembling or refreshing an evidence-linked regression report from saved campaign decisions. |
@@ -1152,6 +1164,8 @@ formats: [md, html, json]
 | `rewrite-plan` | `./open-design/.agent/skills/open-design/plugins/_official/atoms/rewrite-plan/SKILL.md` | Author a long-running multi-file rewrite plan that subsequent patch-edit + diff-review + build-test stages will execute, with explicit ownership boundaries and patch-safety guarantees. |
 | `route-tester` | `./claude-code-kit/.agent/skills/claude-code-kit/cli/core/skills/route-tester/SKILL.md` | Framework-agnostic HTTP API route testing patterns, authentication strategies, and integration testing best practices. Supports REST APIs with JWT cookie authentication and other common auth patterns. |
 | `rss-feeds` | `./hermes-agent/.agent/skills/hermes-agent/optional-skills/research/rss-feeds/SKILL.md` | Read RSS, Atom, JSON feeds; discover feeds behind a page. |
+| `run-models` | `./replicate/.agent/skills/run-models/SKILL.md` | Run AI models on Replicate via predictions, webhooks, and streaming. |
+| `run-models` | `./replicate/skills/run-models/SKILL.md` | Run AI models on Replicate via predictions, webhooks, and streaming. |
 | `rust-engineer` | `./jeffallan-claude-skills/.agent/skills/jeffallan-claude-skills/skills/rust-engineer/SKILL.md` | Writes, reviews, and debugs idiomatic Rust code with memory safety and zero-cost abstractions. Implements ownership patterns, manages lifetimes, designs trait hierarchies, builds async applications with tokio, and structures error handling with Result/Option. |
 | `rust-pro` | `./AgentKit_2/.agent/skills/rust-pro/SKILL.md` | Master Rust 1.75+ with modern async patterns, advanced type system |
 | `rust-review` | `./trailofbits-security/.agent/skills/trailofbits-security/plugins/rust-review/skills/rust-review/SKILL.md` | Performs comprehensive Rust security review for safe/unsafe boundary issues, memory safety in unsafe blocks, concurrency hazards, panic-induced DoS, FFI safety, and async runtime mistakes. Use when auditing Rust crates, services, or libraries — particularly th |

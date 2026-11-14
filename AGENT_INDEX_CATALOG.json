@@ -10,7 +10,7 @@
       "json"
     ],
     "total_agents": 41,
-    "total_skills": 1282,
+    "total_skills": 1296,
     "total_html_templates": 2519
   },
   "agents": [
@@ -156,7 +156,7 @@
       "name": "@kaminho",
       "format": "md",
       "path": "./kit_upper/.agent/agents/kaminho.md",
-      "description": "Kaminho — O roteador e indexador inteligente de agentes e skills de IA. Analisa automaticamente o contexto digitado pelo usuário e traça o caminho exato até o agente e as skills especialistas em < 7ms com 97% de economia de tokens. Desenvolvido por Mizael Sout"
+      "description": "Kaminho v2.0 — O roteador semântico, decompositor de intenções multi-agente e indexador inteligente Tri-Modal (.md, .html, .json) de agentes, skills e templates HTML. Reconhece por semântica o que está sendo digitado, decompõe pedidos complexos em pipelines mu"
     },
     {
       "name": "@mobile-developer",
@@ -1277,6 +1277,18 @@
       "description": "You are an elite brand identity art director, logo designer, visual-system strategist, and presentation designer."
     },
     {
+      "name": "build-models",
+      "format": "md",
+      "path": "./replicate/.agent/skills/build-models/SKILL.md",
+      "description": "- Cog reference (single file): <https://cog.run/llms.txt>"
+    },
+    {
+      "name": "build-models",
+      "format": "md",
+      "path": "./replicate/skills/build-models/SKILL.md",
+      "description": "- Cog reference (single file): <https://cog.run/llms.txt>"
+    },
+    {
       "name": "build-test",
       "format": "md",
       "path": "./open-design/.agent/skills/open-design/plugins/_official/atoms/build-test/SKILL.md",
@@ -1611,6 +1623,18 @@
       "format": "md",
       "path": "./open-design/.agent/skills/open-design/plugins/community/registry-starter/SKILL.md",
       "description": "A small community registry starter plugin used to verify OpenDesign marketplace install flows."
+    },
+    {
+      "name": "compare-models",
+      "format": "md",
+      "path": "./replicate/.agent/skills/compare-models/SKILL.md",
+      "description": "Compare Replicate models by cost, speed, quality, and capabilities."
+    },
+    {
+      "name": "compare-models",
+      "format": "md",
+      "path": "./replicate/skills/compare-models/SKILL.md",
+      "description": "Compare Replicate models by cost, speed, quality, and capabilities."
     },
     {
       "name": "competitive-ads-extractor",
@@ -2607,6 +2631,18 @@
       "format": "md",
       "path": "./open-design/.agent/skills/open-design/design-templates/finance-report/SKILL.md",
       "description": "Produce a single-screen financial report in one self-contained HTML file."
+    },
+    {
+      "name": "find-models",
+      "format": "md",
+      "path": "./replicate/.agent/skills/find-models/SKILL.md",
+      "description": "Find AI models on Replicate using search and curated collections."
+    },
+    {
+      "name": "find-models",
+      "format": "md",
+      "path": "./replicate/skills/find-models/SKILL.md",
+      "description": "Find AI models on Replicate using search and curated collections."
     },
     {
       "name": "find-security-vulnerabilities-in-code",
@@ -4316,13 +4352,7 @@
       "name": "kaminho",
       "format": "md",
       "path": "./kaminho/.agent/skills/kaminho/SKILL.md",
-      "description": "Kaminho — O roteador e indexador inteligente de agentes e skills de IA. Analisa automaticamente o contexto digitado pelo usuário e traça o caminho exato até o agente e as skills especialistas em < 7ms com 97% de economia de tokens. Desenvolvido por Mizael Sout"
-    },
-    {
-      "name": "kaminho",
-      "format": "md",
-      "path": "./agent-indexer-router/.agent/skills/agent-indexer-router/SKILL.md",
-      "description": "Kaminho — O roteador e indexador inteligente de agentes e skills de IA. Analisa automaticamente o contexto digitado pelo usuário e traça o caminho exato até o agente e as skills especialistas em < 7ms com 97% de economia de tokens. Desenvolvido por Mizael Sout"
+      "description": "Kaminho v2.0 — O roteador semântico, decompositor de intenções multi-agente e indexador inteligente Tri-Modal (.md, .html, .json) de agentes, skills e templates HTML. Reconhece por semântica o que está sendo digitado, decompõe pedidos complexos em pipelines mu"
     },
     {
       "name": "kanban-board",
@@ -5723,6 +5753,30 @@
       "description": "Writes, refactors, and evaluates prompts for LLMs — generating optimized prompt templates, structured output schemas, evaluation rubrics, and test suites. Use when designing prompts for new LLM applications, refactoring existing prompts for better accuracy or "
     },
     {
+      "name": "prompt-images",
+      "format": "md",
+      "path": "./replicate/.agent/skills/prompt-images/SKILL.md",
+      "description": "Distilled from Replicate's blog posts on prompting image models (2024-2026). Techniques are model-agnostic and focus on transferable principles."
+    },
+    {
+      "name": "prompt-images",
+      "format": "md",
+      "path": "./replicate/skills/prompt-images/SKILL.md",
+      "description": "Distilled from Replicate's blog posts on prompting image models (2024-2026). Techniques are model-agnostic and focus on transferable principles."
+    },
+    {
+      "name": "prompt-videos",
+      "format": "md",
+      "path": "./replicate/.agent/skills/prompt-videos/SKILL.md",
+      "description": "Distilled from Replicate's blog posts on prompting video models (2025-2026). Techniques are model-agnostic and focus on transferable principles."
+    },
+    {
+      "name": "prompt-videos",
+      "format": "md",
+      "path": "./replicate/skills/prompt-videos/SKILL.md",
+      "description": "Distilled from Replicate's blog posts on prompting video models (2025-2026). Techniques are model-agnostic and focus on transferable principles."
+    },
+    {
       "name": "pronunciation-specialist",
       "format": "md",
       "path": "./claude-ai-music-skills/.agent/skills/claude-ai-music-skills/skills/pronunciation-specialist/SKILL.md",
@@ -5757,6 +5811,18 @@
       "format": "md",
       "path": "./marketingskills/.agent/skills/marketingskills/skills/public-relations/SKILL.md",
       "description": "When the user wants help with public relations, earned media, press coverage, journalist outreach, or media strategy (not pull requests). Also use when the user mentions 'PR,' 'press,' 'press release,' 'media outreach,' 'pitch a journalist,' 'get featured,' 'm"
+    },
+    {
+      "name": "publish-models",
+      "format": "md",
+      "path": "./replicate/.agent/skills/publish-models/SKILL.md",
+      "description": "- Cog reference: <https://cog.run/llms.txt>"
+    },
+    {
+      "name": "publish-models",
+      "format": "md",
+      "path": "./replicate/skills/publish-models/SKILL.md",
+      "description": "- Cog reference: <https://cog.run/llms.txt>"
     },
     {
       "name": "publish-site",
@@ -5951,6 +6017,12 @@
       "description": "Discover, compare, and run AI models using Replicate's API. Strong fit for image, audio, and video generation pipelines that swap models frequently."
     },
     {
+      "name": "replicate",
+      "format": "md",
+      "path": "./replicate/.agent/skills/replicate/SKILL.md",
+      "description": "Official suite of Agent Skills for building AI-powered applications with [Replicate](https://replicate.com)."
+    },
+    {
       "name": "replit-deck",
       "format": "md",
       "path": "./open-design/.agent/skills/open-design/plugins/_official/examples/replit-deck/SKILL.md",
@@ -6141,6 +6213,18 @@
       "format": "md",
       "path": "./hermes-agent/.agent/skills/hermes-agent/optional-skills/research/rss-feeds/SKILL.md",
       "description": "Read RSS, Atom, JSON feeds; discover feeds behind a page."
+    },
+    {
+      "name": "run-models",
+      "format": "md",
+      "path": "./replicate/.agent/skills/run-models/SKILL.md",
+      "description": "Run AI models on Replicate via predictions, webhooks, and streaming."
+    },
+    {
+      "name": "run-models",
+      "format": "md",
+      "path": "./replicate/skills/run-models/SKILL.md",
+      "description": "Run AI models on Replicate via predictions, webhooks, and streaming."
     },
     {
       "name": "rust-engineer",
