@@ -100,6 +100,8 @@ python3 ./scripts/rebuild_catalog.py
 }
 ```
 
+`<SKILLS_DIR>` é a pasta onde suas skills ficam (a que contém `kaminho/`). Troque esse marcador pelo caminho real também nos comandos do `SKILL.md` ao copiá-lo para a pasta de skills do seu agente.
+
 ---
 
 ## 🧰 6. Gerenciar as Skills Instaladas (`kaminho_manager.py`)

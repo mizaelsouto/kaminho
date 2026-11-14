@@ -19,7 +19,7 @@ supported_formats: [md, html, json]
 
 - As demais skills da biblioteca `1_I-A_Skills` **não estão instaladas** no Claude. Não procure por elas em `~/.claude/skills/`.
 - Só use uma skill/agente quando o usuário **pedir pelo nome** ou chamar o Kaminho. Não acione skills por conta própria.
-- Para achar uma skill: rode `kaminho_reader.py --route "<pedido>"` ou `--query "<nome>"`, pegue o `path` no índice (relativo a `/Users/upper/Documents/Projetos.nosync/1_I-A_Skills/`) e leia o `SKILL.md` com Read.
+- Para achar uma skill: rode `kaminho_reader.py --route "<pedido>"` ou `--query "<nome>"`, pegue o `path` no índice (relativo a `<SKILLS_DIR>/`, a pasta onde as skills estão instaladas — a mesma que contém `kaminho/`) e leia o `SKILL.md` com Read.
 - Se o roteamento cobrir só parte do pedido, avise o usuário e complete a busca com `--query`.
 
 ---
@@ -44,20 +44,20 @@ Ao contrário de roteadores tradicionais baseados apenas em palavras-chave exata
 
 1. **Roteamento Semântico & Decomposição de Pipeline (`--route` ou `--pipeline`):**
    ```bash
-   python3 "/Users/upper/Documents/Projetos.nosync/1_I-A_Skills/kaminho/scripts/kaminho_reader.py" --route "Crie um artigo que mostre dados atuais, me pergunte quais dados desejo, e depois gere um plano resumido e uma linguagem bem proxima da humana."
+   python3 "<SKILLS_DIR>/kaminho/scripts/kaminho_reader.py" --route "Crie um artigo que mostre dados atuais, me pergunte quais dados desejo, e depois gere um plano resumido e uma linguagem bem proxima da humana."
    ```
 2. **Manter a ordem literal das frases (`--preserve-order`):**
    ```bash
-   python3 "/Users/upper/Documents/Projetos.nosync/1_I-A_Skills/kaminho/scripts/kaminho_reader.py" --route "<TEXTO>" --preserve-order
+   python3 "<SKILLS_DIR>/kaminho/scripts/kaminho_reader.py" --route "<TEXTO>" --preserve-order
    ```
 3. **Busca Semântica e Léxica nos Índices (`.md`, `.html`, `.json`):**
    ```bash
-   python3 "/Users/upper/Documents/Projetos.nosync/1_I-A_Skills/kaminho/scripts/kaminho_reader.py" --format md --query "linguagem humana"
-   python3 "/Users/upper/Documents/Projetos.nosync/1_I-A_Skills/kaminho/scripts/kaminho_reader.py" --format html --query "apple hig"
+   python3 "<SKILLS_DIR>/kaminho/scripts/kaminho_reader.py" --format md --query "linguagem humana"
+   python3 "<SKILLS_DIR>/kaminho/scripts/kaminho_reader.py" --format html --query "apple hig"
    ```
 4. **Inspeção Limpa de Qualquer Arquivo `.md` ou `.html`:**
    ```bash
-   python3 "/Users/upper/Documents/Projetos.nosync/1_I-A_Skills/kaminho/scripts/kaminho_reader.py" --file ./caminho/para/arquivo.html
+   python3 "<SKILLS_DIR>/kaminho/scripts/kaminho_reader.py" --file ./caminho/para/arquivo.html
    ```
 
 ---
@@ -102,7 +102,7 @@ Ao contrário de roteadores tradicionais baseados apenas em palavras-chave exata
 Gerencia as pastas de `1_I-A_Skills`. A origem de cada uma fica em `kaminho/kaminho-sources.json`. **Nada é apagado direto:** remoções, versões anteriores a um update e duplicatas vão para `1_I-A_Skills/.kaminho-lixeira/` e podem ser restauradas.
 
 ```bash
-K="/Users/upper/Documents/Projetos.nosync/1_I-A_Skills/kaminho/scripts/kaminho_manager.py"
+K="<SKILLS_DIR>/kaminho/scripts/kaminho_manager.py"
 python3 "$K" doctor                          # saúde: origem, tamanho, estrutura, cópias " 2", links, índice
 python3 "$K" sources list                    # origem registrada de cada skill
 python3 "$K" sources suggest                 # deduz origens (git remote, plugin.json, README) → status "sugerida"
