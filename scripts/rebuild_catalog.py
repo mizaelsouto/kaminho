@@ -16,6 +16,9 @@ import re
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILLS_ROOT = os.environ.get("SKILLS_ROOT", os.path.dirname(BASE_DIR))
 
+SKIP_DIRS = {".git", "node_modules", ".venv", "__pycache__", ".kaminho-lixeira"}
+DUP_RE = re.compile(r"^.+ [2-9](\.[A-Za-z0-9]+)?$")
+
 CONTEXT_MATRIX = [
     ("UI, Design, Limpeza Visual, Apple HIG, Ícones 3D", "@frontend-ai-engineer", ["apple-hig-designer", "ui-ux-pro-max", "impeccable"]),
     ("Extração de Design System (DESIGN.md), Tokens, Paleta", "@getdesign", ["getdesign", "open-design"]),
@@ -377,12 +380,12 @@ def build_catalog():
     seen_html = set()
 
     for root, dirs, files in os.walk(SKILLS_ROOT):
-        if ".git" in dirs:
-            dirs.remove(".git")
-        if "node_modules" in dirs:
-            dirs.remove("node_modules")
+        # Ignora repositórios git, dependências, a quarentena do gerenciador e cópias " 2" de conflitos do iCloud
+        dirs[:] = [d for d in dirs if d not in SKIP_DIRS and not DUP_RE.match(d)]
 
         for file in files:
+            if DUP_RE.match(file):
+                continue
             full_path = os.path.join(root, file)
             rel_path = "./" + os.path.relpath(full_path, SKILLS_ROOT).replace("\\", "/")
 

@@ -3,3 +3,6 @@ README_LOCAL.md
 __pycache__/
 *.pyc
 .DS_Store
+
+# Origens das skills instaladas na máquina local (gerado por kaminho_manager.py)
+kaminho-sources.json

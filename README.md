@@ -102,7 +102,34 @@ python3 ./scripts/rebuild_catalog.py
 
 ---
 
-## 📂 6. Estrutura do Projeto
+## 🧰 6. Gerenciar as Skills Instaladas (`kaminho_manager.py`)
+
+Verifica atualizações, atualiza, remove e organiza as skills do diretório. A origem de cada skill fica em `kaminho-sources.json`. Nada é apagado direto: remoções, versões anteriores a um update e duplicatas vão para `.kaminho-lixeira/` e podem ser restauradas.
+
+```bash
+python3 ./scripts/kaminho_manager.py doctor                 # relatório de saúde
+python3 ./scripts/kaminho_manager.py sources suggest        # deduz a origem de cada skill
+python3 ./scripts/kaminho_manager.py sources confirm humanizer
+python3 ./scripts/kaminho_manager.py check --deep           # há versão nova?
+python3 ./scripts/kaminho_manager.py update humanizer --dry-run
+python3 ./scripts/kaminho_manager.py update humanizer
+python3 ./scripts/kaminho_manager.py remove caveman         # vai para a quarentena; restaure com 'restore caveman'
+python3 ./scripts/kaminho_manager.py organize dupes --apply # limpa cópias " 2" redundantes
+```
+
+Variáveis opcionais: `SKILLS_ROOT` (diretório das skills), `KAMINHO_SOURCES` (manifesto) e `KAMINHO_LINK_ROOTS` (pastas com links de skills, padrão `~/.claude/skills` e `~/.agents/skills`).
+
+## 🧪 7. Testes de Roteamento
+
+```bash
+python3 ./tests/eval_routing.py -v
+```
+
+São 47 frases de desenvolvimento e 15 de controle (holdout). As de controle nunca são usadas para ajustar o roteador, então medem como ele se sai com frases novas.
+
+---
+
+## 📂 8. Estrutura do Projeto
 
 ```text
 kaminho/
@@ -111,9 +138,13 @@ kaminho/
 ├── kaminho-index.html                               # Painel e índice semântico em HTML5 (.html) com busca ao vivo
 ├── kaminho-index.json                               # Catálogo JSON portátil (41 agentes + 1.282 skills + 2.519 HTMLs)
 ├── AGENT_INDEX_CATALOG.json                         # Alias de retrocompatibilidade do catálogo
+├── kaminho-sources.json                             # Origem (repo GitHub, subpasta, versão) de cada skill instalada
+├── tests/
+│   └── eval_routing.py                              # Suíte de avaliação do roteamento (dev + holdout)
 ├── scripts/
 │   ├── rebuild_catalog.py                           # Indexador Tri-Modal (.md + .html + .json)
 │   ├── kaminho_reader.py                            # Leitor direto de arquivos e índices .md, .html e .json
+│   ├── kaminho_manager.py                           # Ciclo de vida: origens, check, update, remove, restore, organize
 │   └── benchmark_routers.py                         # Suite de teste de desempenho (10 cenários reais)
 └── .agent/
     └── skills/
